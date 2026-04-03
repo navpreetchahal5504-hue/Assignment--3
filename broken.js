@@ -9,5 +9,39 @@ let greetingOutput = document.querySelector("#greetingOutput");
 // Fix: Updated to #themeBtn to correctly match the HTML element 
 let themeBtn = document.querySelector("#themeBtn");
 
+let messageInput = document.querySelector("# messageInput");
+let liveOutput = document.querySelector("#liveOutput");
+
+let welcomeForm = document.querySelector("#welcomeForm");
+let nameInput = document.querySelector("#nameInput");
+let formOutput = document.querySelector("#formOutput");
+
+// 1. Greeting Button Feature 
+// This feature was already working, no changes needed
+// 1. Greeting Button
+helloBtn.addEventListener("click", function() {
+    greetingOutput.textContent = "Hello, student!";
+});
+
+// 2. Theme Toggle 
+// Error: Incorrect class name "darkmode"
+// Fix: Changed to "dark-mode" to match CSS
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
+
+// 3. Live Input
+messageInput.addEventListener("change", function() {
+    liveOutput.textContent = messageinput.value;
+});
+
+// 4. Welcome Form
+welcomeForm.addEventListener("submit", function() {
+    event.preventDefault();
+    formOutput.textContent = "Welcome, " + nameInput.value;
+});
+
+
+
 
 
