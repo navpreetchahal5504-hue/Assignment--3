@@ -9,7 +9,7 @@ let greetingOutput = document.querySelector("#greetingOutput");
 // Fix: Updated to #themeBtn to correctly match the HTML element 
 let themeBtn = document.querySelector("#themeBtn");
 
-let messageInput = document.querySelector("# messageInput");
+let messageInput = document.querySelector("#messageInput");
 let liveOutput = document.querySelector("#liveOutput");
 
 let welcomeForm = document.querySelector("#welcomeForm");
