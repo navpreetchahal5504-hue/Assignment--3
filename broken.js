@@ -38,10 +38,5 @@ messageInput.addEventListener("change", function() {
 // 4. Welcome Form
 welcomeForm.addEventListener("submit", function(event) {
     event.preventDefault();
-    formOutput.textContent = "Welcome, " + nameInput.value;
+    formOutputormOutput.textContent = "Welcome, " + nameInput.value;
 });
-
-
-
-
-
