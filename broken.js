@@ -32,11 +32,11 @@ themeBtn.addEventListener("click", function() {
 
 // 3. Live Input
 messageInput.addEventListener("change", function() {
-    liveOutput.textContent = messageinput.value;
+    liveOutput.textContent = messageInput.value;
 });
 
 // 4. Welcome Form
-welcomeForm.addEventListener("submit", function() {
+welcomeForm.addEventListener("submit", function(event) {
     event.preventDefault();
     formOutput.textContent = "Welcome, " + nameInput.value;
 });
